@@ -2,10 +2,7 @@ const mongoose = require('mongoose');
 
 const StoreSchema = mongoose.Schema({
    Name: String,
-   OwnerID: {
-    type: mongoose.Types.ObjectId,
-    ref: 'user'
-   },
+   OwnerID: String,
    Location: String
 
 });
